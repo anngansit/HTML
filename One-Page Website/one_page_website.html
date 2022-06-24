@@ -1,170 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Photobooth</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-	
-		<!--NAV-->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
-					<a href="#event" id="link"><li>EVENT</li></a>
-					<a href="#contact" id="link"><li>CONTACT US</li></a>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Stylized Photobooth</title> 
+		<link rel="stylesheet" href="./css/one_page_website.css">
+		<link rel="stylesheet" href="./css/one_page_website_animation.css">
+    </head>
+    <body>
+
+		<!-- NAV -->
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
+					<a href="#gallery"><li>GALLERY</li></a>
+					<a href="#contact"><li>RESERVATIONS</li></a>
 				</ul>
 			</div>
 		</div>
-		<!--END NAV-->
-		
-		
-		
-		<!--HOME-->
+		<!-- END NAV-->
+
+		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div>
-					<span>Stylized Photobooth</span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Stylized Photobooth</span>
 				</div>
 			</div>
 		</div>
-		<!-- END HOME -->
-		
-		<!-- EVENT -->
-		<section>
-			<div id="event">
-				<h1>Choose your template</h1>
-				<p> Choose between our 4x2 and 4x6 template</p>
-				<div>
-				
+		<!-- END HOME-->
+
+		<!-- GALLERY -->
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/image_4x2.png" alt="">
-							<div>
-								<h3>4 x 2 Template</h3>
-								<p>2 prints</p>
+							<div class="photo-overlay">
+								<p>4x2 Template!</p>
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 1 -->
-					
+					<!-- END PHOTO-CONTAINER 1-->
+
 					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/image_4x6.png" alt="">
-							<div>
-								<h3>4x6 Template</h3>
-								<p>1 print</p>
+							<div class="photo-overlay">
+								<p>4X6 Template!</p>
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 2 -->
-				</div>
-				
-				<h1>Choose your backdrop</h1>
-					
-		
-					<div>
+					<!-- END PHOTO-CONTAINER 2-->
+
 					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/gold.png" alt="">
-							<div>
-								<h3>Sequin Gold</h3>
+							<div class="photo-overlay">
+								<p>Stunning Gold!</p>
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 3 -->
-					
+					<!-- END PHOTO-CONTAINER 3-->
+
 					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/silver.png" alt="">
-							<div>
-								<h3>Sequin Silver</h3>
-								<p>Event Name</p>
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 4 -->
-					
-					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img src="./images/marble_white.png" alt="">
-							<div>
-								<h3>Marble White</h3>
-								
-							</div>
-						</div>
-					</div>
-					<!-- END PHOTO-CONTAINER 5 -->
-					
-					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/marble_gold.png" alt="">
-							<div>
-								<h3>Marble White with Gold</h3>
-								
+							<div class="photo-overlay">
+								<p>Marble Gold!</p>
 							</div>
 						</div>
 					</div>
-					<!-- END PHOTO-CONTAINER 6 -->
+					<!-- END PHOTO-CONTAINER 4-->
+
+					<!-- PHOTO-CONTAINER 5 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/marble_white.png" alt="">
+							<div class="photo-overlay">
+								<p>Marble White!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 5-->
+
+					<!-- PHOTO-CONTAINER 6 -->
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/silver.png" alt="">
+							<div class="photo-overlay">
+								<p>Silver!</p>
+							</div>
+						</div>
+					</div>
+					<!-- END PHOTO-CONTAINER 6-->
+
 					
 					
+
 				</div>
 			</div>
 		</section>
-		<!-- END EVENT -->
-		
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/KSIPJdMhf6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
-	
-		<!-- CONTACT US -->		
-		
-		
-		<section>
-			<div id="contact">
-				<div>
-					<h1>CONTACT US</h1>
-					<div>
-						<h1><span>We love to hear from you!</span>
-							<br />Send us an email, and we'll be happy to get back to you.
-						</h1>
-						<p>
+		<!-- END GALLERY-->
+
+		<!-- RSVP -->
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
+						<h2><span>We love to hear from you!</span>
+							<br/>Send us an email, and we'll be happy to get back to you.
+						</h2>
+						<p class="rsvp-text">
 							Please provide us with your basic contact information.
 						</p>
-						<div>
-							<form action="" method="get">
-								First Name: <input type="text" name="First_Name"><br>
-								Last Name: <input type"text" name="Last_Name"><br>
-								Email: <input type="email" name="Email"><br>
-								Message: <input type="message" name="Message"><br>
+						<div class="form-rsvp">
+							<form action="" method="post">
+								<input class="rsvp" type="text" value="" placeholder="First Name">
+								<input class="rsvp" type="text" value="" placeholder="Last Name">
+								<input class="rsvp" type="text" value="" placeholder="Email Address">
+								<input class="rsvp" type="text" value="" placeholder="Phone Number">
+								<div class="form-spacer">
+									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
-									<input type="submit" value="Submit">
-									
-									<br><label class="terms">Terms and Conditions</label>
+								<div class="submit"> 
+									<input type="submit" value="Submit"
 								</div>
+
 							</form>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> 
 		</section>
-		<!-- END CONTACT US -->
-		
-		
-		
+		<!-- END RSVP-->
+
 		<!-- FOOTER -->
-		<div>
-			www.stylizedphotobooth.ca &nbsp;|&nbsp; &copy; 2022
+		<div id="footer">
+			www.stylizedphotobooth.com &nbsp;|&nbsp; &copy; 2022
 		</div>
-		<!-- END FOOTER -->
-	
-	</body>
+		<!-- END FOOTER-->
+
+    </body>
 </html>
-	
-	
+

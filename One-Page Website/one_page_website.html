@@ -5,6 +5,8 @@
         <title>Stylized Photobooth</title> 
 		<link rel="stylesheet" href="./css/one_page_website.css">
 		<link rel="stylesheet" href="./css/one_page_website_animation.css">
+		<link rel="stylesheet" href="./css/modal_css.css">
+		<script src="JS/one_page_website.js" defer></script>
     </head>
     <body>
 
@@ -39,9 +41,9 @@
 					<!-- PHOTO-CONTAINER 1 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image_4x2.png" alt="">
+							<img src="Images/marble_gold.png" alt="">
 							<div class="photo-overlay">
-								<p>4x2 Template!</p>
+								<p>Marble Gold Backdrop!</p>
 							</div>
 						</div>
 					</div>
@@ -50,9 +52,9 @@
 					<!-- PHOTO-CONTAINER 2 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/image_4x6.png" alt="">
+							<img src="Images/marble_white.png" alt="">
 							<div class="photo-overlay">
-								<p>4X6 Template!</p>
+								<p>Marble White Backdrop</p>
 							</div>
 						</div>
 					</div>
@@ -61,9 +63,9 @@
 					<!-- PHOTO-CONTAINER 3 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/gold.png" alt="">
+							<img src="Images/silver.png" alt="">
 							<div class="photo-overlay">
-								<p>Stunning Gold!</p>
+								<p>Silver Backdrop!</p>
 							</div>
 						</div>
 					</div>
@@ -72,9 +74,9 @@
 					<!-- PHOTO-CONTAINER 4 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/marble_gold.png" alt="">
+							<img src="Images/gold.png" alt="">
 							<div class="photo-overlay">
-								<p>Marble Gold!</p>
+								<p>Gold Backdrop!</p>
 							</div>
 						</div>
 					</div>
@@ -83,9 +85,9 @@
 					<!-- PHOTO-CONTAINER 5 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/marble_white.png" alt="">
+							<img src="Images/image_4x2.png" alt="">
 							<div class="photo-overlay">
-								<p>Marble White!</p>
+								<p>4x2 Template</p>
 							</div>
 						</div>
 					</div>
@@ -94,9 +96,9 @@
 					<!-- PHOTO-CONTAINER 6 -->
 					<div class="photo-container">
 						<div class="photo">
-							<img src="./images/silver.png" alt="">
+							<img src="Images/image_4x6.png" alt="">
 							<div class="photo-overlay">
-								<p>Silver!</p>
+								<p>4x6 Template</p>
 							</div>
 						</div>
 					</div>
@@ -109,6 +111,70 @@
 			</div>
 		</section>
 		<!-- END GALLERY-->
+
+		<!--Modal Lightbox-->
+		<div class="row">
+			<div class="column">
+			  <img src="Images/img1.jpeg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="Images/img2.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="Images/img3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+			  <img src="Images/img4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		  </div>
+		  
+		  <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 4</div>
+				<img src="Images/img1.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 4</div>
+				<img src="Images/img2.jpeg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 4</div>
+				<img src="Images/img3.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 4</div>
+				<img src="Images/img4.jpg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="Images/img1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Event_Sample1">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="Images/img2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Event_Sample2">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="Images/img3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Event_Sample3">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="Images/img4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Event_Sample4">
+			  </div>
+			</div>
+		  </div>
+		  <!--End of Modal Lightbox-->
 
 		<!-- RSVP -->
 		<section id="contact">
